@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*----------------------------------Body------------------------------------------------------------*/
+  
+body{
+background-color: #ffffff;
+font-size: 24px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+/*---------------------------End--------------------------------------------------------------------*/
+
+/*-----------------------------------Cabeçario------------------------------------------------------*/
+
+.cabeçario{
+    background-color: #f4f4f4;
+}
+/*LINHA MENU*/
+.cabeçario ul li a:hover{
+    color:rgb(41, 172, 128);
+}
+.cabeçario ul li a{
+    color: #1A1A1A;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+}
+.cabeçario ul li a::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #A497cf;
+    transition: width 0.5s;
+}
+.cabeçario ul li a:hover::after{
+    width: 50%;
+}
+
+
+/*------------------------Dark Mode Menu--------------------------------------------------------------------*/
+
+.dark-mode{
+ background-color: #333333;
+ color: white;
+}
+/*LINHA MENU*/
+.dark-mode .cabeçario ul li a:hover{
+    color:rgb(110, 189, 162);
+}
+.dark-mode .cabeçario{
+ background-color: #1A1A1A;
+}
+.dark-mode .cabeçario ul li a::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #80629e;
+    transition: width 0.5s;
+}
+.dark-mode .cabeçario ul li a:hover::after{
+    width: 50%;
+}
+.dark-mode .menu{
+ color: white;
+}
+.dark-mode .back{
+visibility: hidden;
+}
+.tema button{  
+ width: 90px;
+ height: 40px;
+ background-color: #0066cc;
+ border: transparent;
+ border-radius: 40px;
+}
+.bola1{  
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: transparent;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.dark-mode .bola1{
+    margin-left: 58px;     
+}
+body  .bola1{
+     margin-left: 0;
+}
+
+/*-----------------------------------End------------------------------------------------------------*/
+/*-----------------------------------Rodapé---------------------------------------------------------*/
+.roda{
+    background-color: #f4f4f4;
+    color: #1A1A1A;
+    text-decoration: none;
+}
+.roda p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.roda a:hover{
+    color: rgb(41, 172, 128);
+}
+.roda a{
+    color: #1A1A1A;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.dark-mode .roda a:hover{
+    color: rgb(110, 189, 162);
+}
+.dark-mode .roda{
+    background-color: #1A1A1A;
+    color: #ffffff;
+}
+.dark-mode .roda a{
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+}
